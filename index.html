@@ -3,40 +3,40 @@
 <style>
 :root {
   color-scheme: light dark;
-  --bg: #f5f4f1;
+  --bg: #ececec;
   --panel: #ffffff;
-  --text: #23201c;
-  --muted: #6b6560;
-  --border: #e3ddd4;
-  --accent: #b5652b;
-  --accent-bg: #fdece1;
-  --row-hover: #faf6f0;
-  --buy: #a13a3a;
-  --sell: #2f7a4f;
+  --text: #1a1a1a;
+  --muted: #6f6f6f;
+  --border: #d4d4d4;
+  --accent: #2b2b2b;
+  --accent-bg: #e0e0e0;
+  --row-hover: #f5f5f5;
+  --buy: #b5555c;
+  --sell: #237a52;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1b1815;
-    --panel: #262220;
-    --text: #ece7e1;
-    --muted: #a39a90;
-    --border: #3a352f;
-    --accent: #e29b5e;
-    --accent-bg: #3a2c20;
-    --row-hover: #2e2a26;
-    --buy: #e28080;
-    --sell: #7fcf9d;
+    --bg: #121212;
+    --panel: #1c1c1c;
+    --text: #ededed;
+    --muted: #a0a0a0;
+    --border: #3a3a3a;
+    --accent: #ededed;
+    --accent-bg: #2a2a2a;
+    --row-hover: #232323;
+    --buy: #cf7268;
+    --sell: #3aab7a;
   }
 }
 :root[data-theme="light"] {
-  --bg: #f5f4f1; --panel: #ffffff; --text: #23201c; --muted: #6b6560;
-  --border: #e3ddd4; --accent: #b5652b; --accent-bg: #fdece1; --row-hover: #faf6f0;
-  --buy: #a13a3a; --sell: #2f7a4f;
+  --bg: #ececec; --panel: #ffffff; --text: #1a1a1a; --muted: #6f6f6f;
+  --border: #d4d4d4; --accent: #2b2b2b; --accent-bg: #e0e0e0; --row-hover: #f5f5f5;
+  --buy: #b5555c; --sell: #237a52;
 }
 :root[data-theme="dark"] {
-  --bg: #1b1815; --panel: #262220; --text: #ece7e1; --muted: #a39a90;
-  --border: #3a352f; --accent: #e29b5e; --accent-bg: #3a2c20; --row-hover: #2e2a26;
-  --buy: #e28080; --sell: #7fcf9d;
+  --bg: #121212; --panel: #1c1c1c; --text: #ededed; --muted: #a0a0a0;
+  --border: #3a3a3a; --accent: #ededed; --accent-bg: #2a2a2a; --row-hover: #232323;
+  --buy: #cf7268; --sell: #3aab7a;
 }
 * { box-sizing: border-box; }
 body {
@@ -104,7 +104,7 @@ tbody td.name { white-space: normal; min-width: 180px; }
 tbody td.num { text-align: right; font-variant-numeric: tabular-nums; }
 tbody tr:hover { background: var(--row-hover); }
 .buy { color: var(--buy); }
-.sell { color: var(--sell); }
+.sell { color: var(--sell); font-weight: 600; }
 .dash { color: var(--muted); }
 .seller-tag {
   font-size: 0.75rem;
